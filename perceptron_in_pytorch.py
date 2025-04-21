@@ -1,3 +1,5 @@
+import numpy as np
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -40,9 +42,6 @@ for epoch in range(epochs):
 
     print("Epoch: ", epoch, "/", epochs)
     print("Loss: ", loss.item())
-
-    
-
 
 with torch.no_grad():
     """ toto funguje basically jako try-catch """
